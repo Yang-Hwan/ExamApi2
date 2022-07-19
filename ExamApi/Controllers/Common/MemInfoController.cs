@@ -102,7 +102,10 @@ namespace ExamApi.Controllers.Common
                         IsUse = ai.mauth.IsUse
                     });
 
+
+
             return Ok(menu);
+
         }
 
         [HttpGet("menu2")]
