@@ -14,7 +14,7 @@ namespace ExamApi.Controllers
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Test001", "Test002", "Test003", "Test004", "Test004 - 1"
-            , "test006", "aaa"
+            , "test006", "test006 - 1"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
