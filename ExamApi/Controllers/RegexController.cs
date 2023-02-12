@@ -229,7 +229,12 @@ namespace ExamApi.Controllers
             return msg;
         }
 
-
+        [HttpGet("Regex06")]
+        public ActionResult<object> Regex06()
+        {
+            string msg = "msg";
+            return Ok(new {msg});
+        }
 
     }
 }
