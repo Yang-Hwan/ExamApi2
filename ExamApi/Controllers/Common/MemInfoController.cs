@@ -122,6 +122,20 @@ namespace ExamApi.Controllers.Common
             return Ok(menu);
         }
 
+        
+        [HttpGet("menu2_1")]
+        public ActionResult Menu2_1(int Step)
+        {
+            var menu = _context.Menu.Where(x => x.Step == Step).Select(r=> new
+            {
+                Mark = r.Mark,
+                MarkRef = r.MarkRef,
+                Step = r.Step,
+                Src = r.Src 
+            });
+
+            return Ok(menu);
+        }
     }
 
     public class WalletInfo
